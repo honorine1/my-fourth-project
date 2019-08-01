@@ -111,3 +111,28 @@
 .icon{
    text-align: center;
 }
+#order1, #order2, #order3{
+    margin-top:30px;
+    padding-left: 30PX;
+}
+#s, #m, #l{
+    padding-left: 50px;
+}
+.ord a{
+    color: #CA6C08;
+    font-family:Chivo;
+    font-size: 50px; 
+    border-radius:20px;
+    margin-left: 280px;
+    padding-right: 200px;
+    padding-left:200px; 
+
+}
+.ord a:hover{
+    background-color:black;
+    color:whitesmoke;   
+}
+#shopping-card{
+    text-decoration-style:bold;
+    font-size: 20px;
+}

@@ -27,27 +27,96 @@
                     </div>
                 </div>
             </div>
+           
             <div class="row">
-                <div class="col-md-12">
-                    <div class="backg">
-                        <h1>Welcome to M&H Pizzeria</h1>
-                        <h5>Opening days:</h5>
-                        <h5>Monday-Friday: 10 AM - 10 PM</h5>
-                        <h5>Saturday-Sunday: 10 AM - 11 PM</h5>
-                        <h3 id="or"><a href="#order" >Start Ordering</a></h3>
+                <div class="col-md-4">
+                    <div class="small">
+                        <img id="order1"src="https://www.abeautifulplate.com/wp-content/uploads/2015/08/the-best-homemade-margherita-pizza-1-4.jpg" width="300px" height="300px">
+                        <h4 id="s" >Small pizza</h4>
+
                     </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="medium">
+                        <img id="order2"src="https://www.abeautifulplate.com/wp-content/uploads/2015/08/the-best-homemade-margherita-pizza-1-5.jpg"  width="300px" height="300px">
+                        <h4 id="m">Medium Pizza</h4>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="large">
+                        <img id="order3"src="http://contenthandler.azureedge.net/recp/427/2000/0/389.jpg" width="300px" height="300px">
+                        <h4 id="l">Large Pizza</h4>
+                    </div>
+                </div>
+                <div class="ord">
+                    <h3 ><a href="order.html">Order now</a></h3>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-4">
-                    <img id="order1"src="https://www.abeautifulplate.com/wp-content/uploads/2015/08/the-best-homemade-margherita-pizza-1-4.jpg" width="300px" height="300px">
+                <div class="col-md-2">
+
                 </div>
-                <div class="col-md-4">
-                    <img id="order2"src="https://www.abeautifulplate.com/wp-content/uploads/2015/08/the-best-homemade-margherita-pizza-1-5.jpg"  width="300px" height="300px">
+                <div class="col-md-8">
+                        <form id="shopping-card">
+                            <div class="form-group">
+                                <label for="new-full-name">Full name</label>
+                                <input type="text" class="form-control" id="new-full-name" placeholder="Enter your full name">
+                            </div>
+                            <!-- <div class="form-group">
+                                <label for="new-last-name">Last name</label>
+                                <input type="radio" class="form-control" id="new-last-name">
+                            </div> -->
+                            <div class="form-group">
+                                <label for="size">Choose the size of Pizza you want</label><br>
+                                    <input type="radio" value="small" formControlName="size">
+                                    <span>small</span>
+                                
+                                <label>
+                                    <input type="radio" value="medium" formControlName="size">
+                                    <span>medium</span>
+                                </label>
+                                <label>
+                                    <input type="radio" value="large" formControlName="size">
+                                    <span>large</span>
+                                </label>
+                            </div>
+                            <div class="form-group">
+                                <lebel for="crust">Choose the kind of Pizza you want</lebel>
+                                <select>
+                                        <option value="Thin crust">Thin crust</option>
+                                        <option value="Flatbread crust">Flatbread crust</option>
+                                        <option value="Thick crust">Thick crust</option>
+                                        <option value="Focaccia crust"> Focaccia</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                    <lebel for="toppings">Choose the prefered Pizza toppings</lebel>
+                                    <select>
+                                            <option value="Mushrooms">Mushrooms</option>
+                                            <option value="Onions">Onions</option>
+                                            <option value="Sausage">Sausage</option>
+                                            <option value="Bacon"> Bacon</option>
+                                            <option value="Extra cheese"> Extra cheese</option>
+                                            <option value="Black Olives"> Black Olives</option>
+                                            <option value="Green Peppers"> Green Peppers</option>
+                                            <option value="Pepperoni"> Pepperoni</option>
+                                    </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="number-of-pizza">How many do you want</label>
+                                <input type="number" id="num" name="num" min="1" max="100">
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="btn">Total</button>
+                                <button type="submit" class="btn">Add other order</button>
+                            </div>
+                        </form>
+                    
+
                 </div>
-                <div class="col-md-4">
-                        <img id="order1"src="http://contenthandler.azureedge.net/recp/427/2000/0/389.jpg" width="300px" height="300px">
-                    </div>
+                <div class="col-md-2">
+
+                </div>
             </div>
             <div class="footer">
                 <p>&copy 2019 All Right Reserved!Designer:U.Honorine</p>
