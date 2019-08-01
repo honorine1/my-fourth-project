@@ -98,3 +98,15 @@
 .pizzab{
     padding:20px;
 }
+.footer{
+    background-color:black;
+    color:white;
+    height:100px;
+}
+.footer p{
+    text-align: center;
+    padding-top:20px;
+}
+.icon{
+   text-align: center;
+}
