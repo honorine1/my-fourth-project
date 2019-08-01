@@ -87,6 +87,14 @@
     border-radius:50%;
     
 }
+#men{
+    text-align: center;
+    font-family: Chevo;
+    margin: 50px;
+}
 .pizza{
-    border-radius:50%;
+    padding:20px
+}
+.pizzab{
+    padding:20px;
 }
