@@ -45,43 +45,45 @@
     padding-top: 200px;
     padding-left:50px; 
 }
+.backg h5{
+    color:white;
+    font-family:Chivo;
+    font-size: 20px;
+    padding-left:50px; 
+}
+
+
 .backg #or{
     color: #CA6C08;
     font-family:Chivo;
     font-size: 50px; 
-    /* border-style: solid; */
     border-radius:20px;
     background-color:black;
     margin-right:800px;
     margin-left: 50px;
     padding-left:50px;
+    /* padding-bottom: 50px; */
 
 }
-/* .header .nav{
-    list-style-type: none;
-    text-align: center;
-
-    
-    
-}
-.nav li{
-    display:inline;
-} */
-/* 
-
-.back{
-    background-image: url("https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80");
-    background-repeat: no-repeat;
-    background-position: relative;
-    background-size: cover;
-    height:600px;
-    /* padding-top:200px; */
-/* }
-.nav a:hover{
-background-color:black;
-text-decoration:underline;
-}
-.nav a.active{
-    background-color:grey;
+#about{
+    font-family: Chevo;
+    font-size: 30PX;
     color:black;
-} */ */
+    text-align: center;
+    padding: 30px;
+    margin:30px;
+    text-decoration-style: solid bold;
+}
+#abimge1 {
+    background-image: url("https://images.wallpaperscraft.com/image/pizza_mushrooms_pepper_oil_garlic_10281_1280x720.jpg");
+    width:500px;
+    height: 300px;
+    border-radius:50%;
+}
+#abimge2{
+    background-image: url("https://images.unsplash.com/photo-1506354666786-959d6d497f1a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+    width:500px;
+    height: 300px;
+    border-radius:50%;
+    
+}
