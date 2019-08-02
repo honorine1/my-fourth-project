@@ -62,10 +62,7 @@
                                 <label for="new-full-name">Full name</label>
                                 <input type="text" class="form-control" id="new-full-name" placeholder="Enter your full name">
                             </div>
-                            <!-- <div class="form-group">
-                                <label for="new-last-name">Last name</label>
-                                <input type="radio" class="form-control" id="new-last-name">
-                            </div> -->
+                           
                             <div class="form-group">
                                 <label for="size">Choose the size of Pizza you want</label><br>
                                     <input type="radio" value="small" formControlName="size">
@@ -107,8 +104,16 @@
                                 <input type="number" id="num" name="num" min="1" max="100">
                             </div>
                             <div class="form-group">
-                                <button type="submit" class="btn">Total</button>
-                                <button type="submit" class="btn">Add other order</button>
+                                    <lebel for="crust">Do you want your pizza to be delivered?</lebel>
+                                    <select>
+                                            <option value="Yes">Yes</option>
+                                            <option value="No">No</option>
+                                           
+                                    </select>
+                                </div>
+                            <div class="form-group">
+                                <button type="submit" class="btn">Submit</button>
+                                <button type="submit" class="btn">next order</button>
                             </div>
                         </form>
                     
