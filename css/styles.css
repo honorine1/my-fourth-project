@@ -148,14 +148,18 @@
 .shop-items{
     margin:30px;
 }
+.summary{
+    display:none;
+}
 .summary ul {
+    
     text-decoration: none;
     list-style-type: none;
     border-style: double;
     margin-left: 30px;
     height:300px; 
     padding-top:50px;
-    padding-left: 50px;
+    /* padding-left: 30px; */
 }
 .summary p{
     margin-left: 30px;
