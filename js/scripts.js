@@ -1,9 +1,9 @@
-function Pizza(size,crust,topping,quantity,totalPrice){
+function Pizza(size,crust,topping,quantity,total){
 this.size=size;
 this.crust=crust;
 this.topping=topping;
 this.quantity=quantity;
-this.totalPrice=totalPrice;
+this.total=total;
 };
 $('document').ready(function(){
 $('#shopping-card').submit(function(e){
@@ -18,65 +18,84 @@ var pizaSize=$('#pizza-size').val();
 var pizaCrust=$('#pizza-crust').val();
 var pizaTop=$('#pizza-topping').val();
 var pizaQuant=$('#num').val();
-var totalPrice=this.totalPrice;
+var totalPrice;
 
     
 Pizza.prototype.getPrice=function(){
-    return this.totalPrice;
+    return this.totalPrice
 };
 //seting the price for every piza size
 let price;
 switch(pizaSize){
     case pizaSize = "small":
     price = 2500;
-    if(pizaCrust === "thin" && pizaTop === $('#pizza-topping').val()){
+    if(pizaCrust === "Thin " && pizaTop===$('#pizza-topping').val()){
+       
         totalPrice=(price*pizaQuant) + 1500;
     }
-    else if(pizaCrust==='Flatbread' && pizaTop===$('#pizza-topping').val()){
+    else if(pizaCrust==='Flatbread ' && pizaTop===$('#pizza-topping').val()){
+        
         totalPrice===(price*pizaQuant)+2200;
     }
-    else if(pizaCrust==='Thick' && pizaTop===$('#pizza-topping').val()){
+    else if(pizaCrust==='Thick ' && pizaTop===$('#pizza-topping').val()){
+       
         totalPrice===(price*pizaQuant)+2800;
     }
-    else if(pizaCrust==='Focaccia' && pizaTop===$('#pizza-topping').val()){
+    else if(pizaCrust==='Focacci' && pizaTop===$('#pizza-topping').val()){
+      
         totalPrice===(price*pizaQuant)+2000;
     }
 
 break;
+
 case pizaSize="medium":
 price=5000;
-if(pizaCrust === "thin" && pizaTop === $('#pizza-topping').val()){
+if(pizaCrust === "Thin " && pizaTop === $('#pizza-topping').val()){
+    console.log(pizacrust);
     totalPrice=(price*pizaQuant) + 3500;
 }
-else if(pizaCrust==="Flatbread" && pizaTop===$('#pizza-topping').val()){
+else if(pizaCrust==="Flatbread " && pizaTop===$('#pizza-topping').val()){
+    console.log(pizacrust);
     totalPrice===(price*pizaQuant)+4200;
+
 }
 else if(pizaCrust==='Thick' && pizaTop===$('#pizza-topping').val()){
+    console.log(pizacrust);
     totalPrice===(price*pizaQuant)+4800;
 }
-else if(pizaCrust==='Focaccia' && pizaTop===$('#pizza-topping').val()){
+else if(pizaCrust==='Focaccia ' && pizaTop===$('#pizza-topping').val()){
+    console.log(pizacrust);
     totalPrice===(price*pizaQuant)+4000;
 }
 break;
+
 case pizaSize="large":
 price=10000;
-if(pizaCrust === "thin" && pizaTop === $('#pizza-topping').val()){
+if(pizaCrust === "Thin " && pizaTop === $('#pizza-topping').val()){
+    
     totalPrice=(price*pizaQuant) + 5000;
 }
 else if(pizaCrust==="Flatbread" && pizaTop===$('#pizza-topping').val()){
+    
     totalPrice===(price*pizaQuant)+6200;
 }
-else if(pizaCrust==='Thick' && pizaTop===$('#pizza-topping').val()){
+else if(pizaCrust==="Thick" && pizaTop===$('#pizza-topping').val()){
+   
     totalPrice===(price*pizaQuant)+6800;
 }
-else if(pizaCrust==='Focaccia' && pizaTop===$('#pizza-topping').val()){
+else if(pizaCrust==="Focaccia" && pizaTop===$('#pizza-topping').val()){
+    
     totalPrice===(price*pizaQuant)+6000;
 }
 }
+
 var newPizza = new Pizza(pizaSize,pizaCrust,pizaTop,pizaQuant,totalPrice);
 console.log(newPizza);
 console.log(totalPrice);
 });
+// ("ul.summary").append("<li><span class='pizaSize'>" + newPizza.pizaSize + "</span></li>");
+
+
 });
 
 
@@ -92,6 +111,10 @@ console.log(totalPrice);
 
 
 
+  
+// $(document).ready(function() {
+//     $("form#new-contact").submit(function(event) {
+//       event.preventDefault();
   
 //       var inputtedFirstName = $("input#new-first-name").val();
 //       var inputtedLastName = $("input#new-last-name").val();
@@ -103,4 +126,3 @@ console.log(totalPrice);
 //       $("input#new-first-name").val("");
 //       $("input#new-last-name").val("");
 //     });
-//   }); 
