@@ -1,7 +1,8 @@
 # my-fourth-project
 
 ## Project Description
-this app will be used to order pizza online,and give the summary of the whole price details
+M&H Online ordering pizza,is a website used by our customers for getting pizza of their choice easly!
+a customer open this link://honorine1.github.io/my-fourth-project/ and on the order now page,s/he make an order and by clicking order now button he will be able to get the summary of his/her order including the total payment!
 
 ### AUthor's information
 
@@ -9,22 +10,12 @@ this app will be used to order pizza online,and give the summary of the whole pr
 
 ### Set Instruction
 
-
- open up our webpage:https:https://honorine1.github.io/my-fourth-project/
+open up our webpage:https:https://honorine1.github.io/my-fourth-project/
 
 ## Project Description
 
-This is Delani studio website! it includes aboutus parts talking about who we are,our different project portfolio,and contact us part.
-
-### AUthor's information
-
-##### Names: Honorine Uwurukundo
-
-### Set Instruction
-
-
- open up our webpage:https://honorine1.github.io/my-fourth-project/
-
+M&H Online ordering pizza,is a website used by our customers for getting pizza of their choice easly!
+a customer open this link://honorine1.github.io/my-fourth-project/ and on the order now page,s/he make an order and by clicking order now button he will be able to get the summary of his/her order including the total payment!
 
 ### Technology used
 
@@ -49,5 +40,3 @@ contact me on:
 ### License and Copyright
 
 Copyright (c) 2019
-
-=====
