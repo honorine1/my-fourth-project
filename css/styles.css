@@ -118,6 +118,9 @@
 #s, #m, #l{
     padding-left: 50px;
 }
+.ord{
+    padding-top: 50px;
+}
 .ord a{
     color: #CA6C08;
     font-family:Chivo;
@@ -126,6 +129,7 @@
     margin-left: 280px;
     padding-right: 200px;
     padding-left:200px; 
+  
 
 }
 .ord a:hover{
@@ -135,6 +139,8 @@
 #shopping-card{
     text-decoration-style:bold;
     font-size: 20px;
+    border-bottom: solid grey;
+    padding-top: 50px;
 
 }
 .section-header{
@@ -158,9 +164,15 @@
     list-style-type: none;
     border-style: double;
     margin-left: 30px;
+    height:300px; 
+    padding-top:50px;
+    padding-left: 100px;
 }
 .summary p{
     margin-left: 30px;
     text-align: center;
-     
+  
+}
+#contact{
+    text-align: center;
 }
