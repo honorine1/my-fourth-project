@@ -9,18 +9,11 @@ $('document').ready(function(){
 $('#shopping-card').submit(function(e){
 e.preventDefault();
 //get the value frm the selected option in dropdown
-var selectSize=$('#pizza-size option:selected').text();
-var selectCrust=$('#pizza-crust option:selected').text();
-var selectToppings=$('#pizza-topping option:selected').text();
-var inputNumber=$('input#num').val();
-
 var pizaSize=$('#pizza-size').val();
 var pizaCrust=$('#pizza-crust').val();
 var pizaTop=$('#pizza-topping').val();
 var pizaQuant=$('#num').val();
 var totalPrice;
-
-    
 Pizza.prototype.getPrice=function(){
     return this.totalPrice
 };
@@ -30,322 +23,240 @@ switch(pizaSize){
     case pizaSize = "small":
     price = 2500;
     if(pizaCrust === "Thin " && pizaTop==='Mushrooms'){
-       
-        totalPrice=(price*pizaQuant) + 1500;
+      totalPrice=(price*pizaQuant) + 1500;
     }
     else if(pizaCrust === "Thin " && pizaTop==='Onions'){
-       
-        totalPrice=(price*pizaQuant) + 1700;
+       totalPrice=(price*pizaQuant) + 1700;
     }
     else if(pizaCrust === "Thin " && pizaTop==='Sausage'){
-       
-        totalPrice=(price*pizaQuant) + 1900;
+      totalPrice=(price*pizaQuant) + 1900;
     }
     else if(pizaCrust === "Thin " && pizaTop==='Bacon'){
-       
-        totalPrice=(price*pizaQuant) + 2100;
+       totalPrice=(price*pizaQuant) + 2100;
     }
     else if(pizaCrust === "Thin " && pizaTop=== 'Extra cheese'){
-       
-        totalPrice=(price*pizaQuant) + 2300;
+       totalPrice=(price*pizaQuant) + 2300;
     }
     else if(pizaCrust === "Thin " && pizaTop==='Black Olives'){
-       
-        totalPrice=(price*pizaQuant) + 2300;
+       totalPrice=(price*pizaQuant) + 2300;
     }
     else if(pizaCrust === "Thin " && pizaTop==='Green Peppers'){
-       
-        totalPrice=(price*pizaQuant) + 2500;
+       totalPrice=(price*pizaQuant) + 2500;
     }
     else if(pizaCrust === "Thin " && pizaTop==='Pepperoni'){
-       
-        totalPrice=(price*pizaQuant) + 2700;
+       totalPrice=(price*pizaQuant) + 2700;
     }
-
-   
     else if(pizaCrust==="Flatbread " && pizaTop==='Mushrooms'){
-        
-        totalPrice===(price*pizaQuant)+2200;
+       totalPrice===(price*pizaQuant)+2200;
     }
     else if(pizaCrust==='Flatbread ' && pizaTop==='Onions'){
-        
         totalPrice===(price*pizaQuant)+2400;
     }
     else if(pizaCrust==='Flatbread ' && pizaTop==='Sausage'){
-        
         totalPrice===(price*pizaQuant)+2600;
     }
     else if(pizaCrust==='Flatbread ' && pizaTop==='Bacon'){
-        
         totalPrice===(price*pizaQuant)+2800;
     }
     else if(pizaCrust==='Flatbread ' && pizaTop==='Extra cheese'){
-        
         totalPrice===(price*pizaQuant)+3000;
     }
     else if(pizaCrust==='Flatbread ' && pizaTop==='Black Olives'){
-        
-        totalPrice===(price*pizaQuant)+3200;
+       totalPrice===(price*pizaQuant)+3200;
     }
     else if(pizaCrust==='Flatbread ' && pizaTop==='Green Peppers'){
-        
         totalPrice===(price*pizaQuant)+3400;
     }
     else if(pizaCrust==='Flatbread ' && pizaTop==='Pepperoni'){
-        
         totalPrice===(price*pizaQuant)+3600;
     }
     ////////
     
     else if(pizaCrust==='Thick' && pizaTop==='Mushrooms'){
-        
         totalPrice===(price*pizaQuant)+2800;
     }
     else if(pizaCrust==='Thick' && pizaTop==='Onions'){
-        
         totalPrice===(price*pizaQuant)+3000;
     }
     else if(pizaCrust==='Thick' && pizaTop==='Sausage'){
-        
         totalPrice===(price*pizaQuant)+3200;
     }
     else if(pizaCrust==='Thick' && pizaTop==='Bacon'){
-        
         totalPrice===(price*pizaQuant)+3400;
     }
     else if(pizaCrust==='Thick ' && pizaTop==='Extra cheese'){
-        
-        totalPrice===(price*pizaQuant)+3600;
+       totalPrice===(price*pizaQuant)+3600;
     }
     else if(pizaCrust==='Thick' && pizaTop==='Black Olives'){
-        
         totalPrice===(price*pizaQuant)+3800;
     }
     else if(pizaCrust==='Thick' && pizaTop==='Green Peppers'){
-        
-        totalPrice===(price*pizaQuant)+4000;
+       totalPrice===(price*pizaQuant)+4000;
     }
     else if(pizaCrust==='Thick ' && pizaTop==='Pepperoni'){
-        
-        totalPrice===(price*pizaQuant)+4200;
+       totalPrice===(price*pizaQuant)+4200;
     }
     /////
     else if(pizaCrust==='Focacci' && pizaTop==='Mushrooms'){
-        
-        totalPrice===(price*pizaQuant)+2500;
+       totalPrice===(price*pizaQuant)+2500;
     }
     else if(pizaCrust==='Focacci' && pizaTop==='Onions'){
-        
         totalPrice===(price*pizaQuant)+2700;
     }
     else if(pizaCrust==='Focacci' && pizaTop==='Sausage'){
-        
         totalPrice===(price*pizaQuant)+2900;
     }
     else if(pizaCrust==='Focacci' && pizaTop==='Bacon'){
-        
-        totalPrice===(price*pizaQuant)+3100;
+       totalPrice===(price*pizaQuant)+3100;
     }
     else if(pizaCrust==='Focacci ' && pizaTop==='Extra cheese'){
-        
         totalPrice===(price*pizaQuant)+3300;
     }
     else if(pizaCrust==='Focacci' && pizaTop==='Black Olives'){
-        
         totalPrice===(price*pizaQuant)+3500;
     }
     else if(pizaCrust==='Focacci' && pizaTop==='Green Peppers'){
-        
         totalPrice===(price*pizaQuant)+3800;
     }
     else if(pizaCrust==='Focacci ' && pizaTop==='Pepperoni'){
-        
         totalPrice===(price*pizaQuant)+4000;
     }
-
 break;
 ////////////////////////////////////////////////////////////////////
 
 case pizaSize="medium":
 price=5000;
 if(pizaCrust === "Thin " && pizaTop==='Mushrooms'){
-       
     totalPrice=(price*pizaQuant) + 1500;
 }
 else if(pizaCrust === "Thin " && pizaTop==='Onions'){
-   
-    totalPrice=(price*pizaQuant) + 1700;
+   totalPrice=(price*pizaQuant) + 1700;
 }
 else if(pizaCrust === "Thin " && pizaTop==='Sausage'){
-   
-    totalPrice=(price*pizaQuant) + 1900;
+   totalPrice=(price*pizaQuant) + 1900;
 }
 else if(pizaCrust === "Thin " && pizaTop==='Bacon'){
-   
-    totalPrice=(price*pizaQuant) + 2100;
+   totalPrice=(price*pizaQuant) + 2100;
 }
 else if(pizaCrust === "Thin " && pizaTop=== 'Extra cheese'){
-   
-    totalPrice=(price*pizaQuant) + 2300;
+   totalPrice=(price*pizaQuant) + 2300;
 }
 else if(pizaCrust === "Thin " && pizaTop==='Black Olives'){
-   
-    totalPrice=(price*pizaQuant) + 2300;
+   totalPrice=(price*pizaQuant) + 2300;
 }
 else if(pizaCrust === "Thin " && pizaTop==='Green Peppers'){
-   
-    totalPrice=(price*pizaQuant) + 2500;
+   totalPrice=(price*pizaQuant) + 2500;
 }
 else if(pizaCrust === "Thin " && pizaTop==='Pepperoni'){
-   
-    totalPrice=(price*pizaQuant) + 2700;
+   totalPrice=(price*pizaQuant) + 2700;
 }
-
-
 else if(pizaCrust==="Flatbread " && pizaTop==='Mushrooms'){
-    
     totalPrice===(price*pizaQuant)+2200;
 }
 else if(pizaCrust==="Flatbread " && pizaTop==='Onions'){
-    
     totalPrice===(price*pizaQuant)+2400;
 }
 else if(pizaCrust==="Flatbread " && pizaTop==='Sausage'){
-    
     totalPrice===(price*pizaQuant)+2600;
 }
 else if(pizaCrust==="Flatbread " && pizaTop==='Bacon'){
-    
     totalPrice===(price*pizaQuant)+2800;
 }
 else if(pizaCrust==="Flatbread " && pizaTop==='Extra cheese'){
-    
     totalPrice===(price*pizaQuant)+3000;
 }
 else if(pizaCrust==="Flatbread " && pizaTop==='Black Olives'){
-    
     totalPrice===(price*pizaQuant)+3200;
 }
 else if(pizaCrust==="Flatbread " && pizaTop==='Green Peppers'){
-    
     totalPrice===(price*pizaQuant)+3400;
 }
 else if(pizaCrust==="Flatbread " && pizaTop==='Pepperoni'){
-    
     totalPrice===(price*pizaQuant)+3600;
 }
 ////////
 
 else if(pizaCrust==="Thick" && pizaTop==='Mushrooms'){
-    
     totalPrice===(price*pizaQuant)+2800;
 }
 else if(pizaCrust==="Thick" && pizaTop==='Onions'){
-    
     totalPrice===(price*pizaQuant)+3000;
 }
 else if(pizaCrust==="Thick" && pizaTop==='Sausage'){
-    
     totalPrice===(price*pizaQuant)+3200;
 }
 else if(pizaCrust==="Thick" && pizaTop==='Bacon'){
-    
     totalPrice===(price*pizaQuant)+3400;
 }
 else if(pizaCrust==="Thick " && pizaTop==='Extra cheese'){
-    
     totalPrice===(price*pizaQuant)+3600;
 }
 else if(pizaCrust==="Thick" && pizaTop==='Black Olives'){
-    
     totalPrice===(price*pizaQuant)+3800;
 }
 else if(pizaCrust==="Thick" && pizaTop==='Green Peppers'){
-    
     totalPrice===(price*pizaQuant)+4000;
 }
 else if(pizaCrust==="Thick " && pizaTop==='Pepperoni'){
-    
     totalPrice===(price*pizaQuant)+4200;
 }
 /////
 else if(pizaCrust==='Focacci' && pizaTop==='Mushrooms'){
-    
     totalPrice===(price*pizaQuant)+2500;
 }
 else if(pizaCrust==='Focacci' && pizaTop==='Onions'){
-    
     totalPrice===(price*pizaQuant)+2700;
 }
 else if(pizaCrust==='Focacci' && pizaTop==='Sausage'){
-    
     totalPrice===(price*pizaQuant)+2900;
 }
 else if(pizaCrust==='Focacci' && pizaTop==='Bacon'){
-    
     totalPrice===(price*pizaQuant)+3100;
 }
 else if(pizaCrust==='Focacci ' && pizaTop==='Extra cheese'){
-    
     totalPrice===(price*pizaQuant)+3300;
 }
 else if(pizaCrust==='Focacci' && pizaTop==='Black Olives'){
-    
     totalPrice===(price*pizaQuant)+3500;
 }
 else if(pizaCrust==='Focacci' && pizaTop==='Green Peppers'){
-    
     totalPrice===(price*pizaQuant)+3800;
 }
 else if(pizaCrust==='Focacci ' && pizaTop==='Pepperoni'){
-    
     totalPrice===(price*pizaQuant)+4000;
 }
-
 break;
 //////////////////////////////////////////////////////////////////////////////
 case pizaSize="large":
 price=10000;
 if(pizaCrust === "Thin " && pizaTop==='Mushrooms'){
-       
-    totalPrice=(price*pizaQuant) + 1500;
+       totalPrice=(price*pizaQuant) + 1500;
 }
 else if(pizaCrust === "Thin " && pizaTop==='Onions'){
-   
-    totalPrice=(price*pizaQuant) + 1700;
+   totalPrice=(price*pizaQuant) + 1700;
 }
 else if(pizaCrust === "Thin " && pizaTop==='Sausage'){
-   
-    totalPrice=(price*pizaQuant) + 1900;
+   totalPrice=(price*pizaQuant) + 1900;
 }
 else if(pizaCrust === "Thin " && pizaTop==='Bacon'){
-   
-    totalPrice=(price*pizaQuant) + 2100;
+   totalPrice=(price*pizaQuant) + 2100;
 }
 else if(pizaCrust === "Thin " && pizaTop=== 'Extra cheese'){
-   
-    totalPrice=(price*pizaQuant) + 2300;
+   totalPrice=(price*pizaQuant) + 2300;
 }
 else if(pizaCrust === "Thin " && pizaTop==='Black Olives'){
-   
-    totalPrice=(price*pizaQuant) + 2300;
+   totalPrice=(price*pizaQuant) + 2300;
 }
 else if(pizaCrust === "Thin " && pizaTop==='Green Peppers'){
-   
-    totalPrice=(price*pizaQuant) + 2500;
+   totalPrice=(price*pizaQuant) + 2500;
 }
 else if(pizaCrust === "Thin " && pizaTop==='Pepperoni'){
-   
-    totalPrice=(price*pizaQuant) + 2700;
+   totalPrice=(price*pizaQuant) + 2700;
 }
-
-
 else if(pizaCrust==='Flatbread ' && pizaTop==='Mushrooms'){
-    
     totalPrice===(price*pizaQuant)+2200;
 }
 else if(pizaCrust==='Flatbread ' && pizaTop==='Onions'){
-    
     totalPrice===(price*pizaQuant)+2400;
 }
 else if(pizaCrust==='Flatbread ' && pizaTop==='Sausage'){
@@ -353,95 +264,72 @@ else if(pizaCrust==='Flatbread ' && pizaTop==='Sausage'){
     totalPrice===(price*pizaQuant)+2600;
 }
 else if(pizaCrust==='Flatbread' && pizaTop==='Bacon'){
-    
     totalPrice===(price*pizaQuant)+2800;
 }
 else if(pizaCrust==='Flatbread ' && pizaTop==='Extra cheese'){
-    
     totalPrice===(price*pizaQuant)+3000;
 }
 else if(pizaCrust==='Flatbread' && pizaTop==='Black Olives'){
-    
     totalPrice===(price*pizaQuant)+3200;
 }
 else if(pizaCrust==='Flatbread' && pizaTop==='Green Peppers'){
-    
     totalPrice===(price*pizaQuant)+3400;
 }
 else if(pizaCrust==='Flatbread' && pizaTop==='Pepperoni'){
-    
     totalPrice===(price*pizaQuant)+3600;
 }
 ////////
 
 else if(pizaCrust==='Thick' && pizaTop==='Mushrooms'){
-    
     totalPrice===(price*pizaQuant)+2800;
 }
 else if(pizaCrust==='Thick' && pizaTop==='Onions'){
-    
-    totalPrice===(price*pizaQuant)+3000;
+     totalPrice===(price*pizaQuant)+3000;
 }
 else if(pizaCrust==='Thick' && pizaTop==='Sausage'){
-    
     totalPrice===(price*pizaQuant)+3200;
 }
 else if(pizaCrust==='Thick' && pizaTop==='Bacon'){
-    
     totalPrice===(price*pizaQuant)+3400;
 }
 else if(pizaCrust==='Thick ' && pizaTop==='Extra cheese'){
-    
     totalPrice===(price*pizaQuant)+3600;
 }
 else if(pizaCrust==='Thick' && pizaTop==='Black Olives'){
-    
     totalPrice===(price*pizaQuant)+3800;
 }
 else if(pizaCrust==='Thick' && pizaTop==='Green Peppers'){
-    
     totalPrice===(price*pizaQuant)+4000;
 }
 else if(pizaCrust==='Thick ' && pizaTop==='Pepperoni'){
-    
     totalPrice===(price*pizaQuant)+4200;
 }
 /////
 else if(pizaCrust==='Focacci' && pizaTop==='Mushrooms'){
-    
     totalPrice===(price*pizaQuant)+2500;
 }
 else if(pizaCrust==='Focacci' && pizaTop==='Onions'){
-    
     totalPrice===(price*pizaQuant)+2700;
 }
 else if(pizaCrust==='Focacci' && pizaTop==='Sausage'){
-    
     totalPrice===(price*pizaQuant)+2900;
 }
 else if(pizaCrust==='Focacci' && pizaTop==='Bacon'){
-    
     totalPrice===(price*pizaQuant)+3100;
 }
 else if(pizaCrust==='Focacci ' && pizaTop==='Extra cheese'){
-    
     totalPrice===(price*pizaQuant)+3300;
 }
 else if(pizaCrust==='Focacci' && pizaTop==='Black Olives'){
-    
     totalPrice===(price*pizaQuant)+3500;
 }
 else if(pizaCrust==='Focacci' && pizaTop==='Green Peppers'){
-    
     totalPrice===(price*pizaQuant)+3800;
 }
 else if(pizaCrust==='Focacci ' && pizaTop==='Pepperoni'){
-    
     totalPrice===(price*pizaQuant)+4000;
 }
-
 }
-
 var newPizza = new Pizza(pizaSize,pizaCrust,pizaTop,pizaQuant,totalPrice);
 console.log(newPizza);
 console.log(totalPrice);

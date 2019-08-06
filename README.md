@@ -2,7 +2,7 @@
 
 ## Project Description
 M&H Online ordering pizza,is a website used by our customers for getting pizza of their choice easly!
-a customer open this link://honorine1.github.io/my-fourth-project/ and on the order now page,s/he make an order and by clicking order now button he will be able to get the summary of his/her order including the total payment!
+a customer open this link:https://honorine1.github.io/my-fourth-project/and on the order now page,s/he make an order and by clicking order now button he will be able to get the summary of his/her order including the total payment!
 
 ### AUthor's information
 
@@ -10,7 +10,7 @@ a customer open this link://honorine1.github.io/my-fourth-project/ and on the or
 
 ### Set Instruction
 
-open up our webpage:https:https://honorine1.github.io/my-fourth-project/
+open up our webpage:https:https:https://honorine1.github.io/my-fourth-project/
 
 ## Project Description
 
