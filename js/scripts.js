@@ -92,14 +92,13 @@ else if(pizaCrust==="Focaccia" && pizaTop===$('#pizza-topping').val()){
 var newPizza = new Pizza(pizaSize,pizaCrust,pizaTop,pizaQuant,totalPrice);
 console.log(newPizza);
 console.log(totalPrice);
-$('.summary')
-//////////////////////////
-            $(".summary").show();
-            $(".size").text(newPizza.size);
-            $(".type").text(newPizza.crust);
-            $(".your").text(newPizza.topping);
-            $(".number").text(newPizza.quantity);
-            $(".ttt").text(newPizza.total);  
+$('.summary').show();
+$('.pizaSize').text(newPizza.size);
+$('.pizaCrust').text(newPizza.crust);
+$('.pizaTop').text(newPizza.topping);
+$('.pizaQuant').text(newPizza.quantity);
+$('.pizaTot').text(newPizza.total);
+
 
 });
 
