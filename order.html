@@ -53,9 +53,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-2">
-
-                </div>
+                
                 <div class="col-md-8">
                         <form id="shopping-card">
                             <div class="form-group">
@@ -64,31 +62,26 @@
                             </div>
                            
                             <div class="form-group">
-                                <label for="size">Choose the size of Pizza you want</label><br>
-                                    <input type="radio" value="small" formControlName="size">
-                                    <span>small</span>
-                                
-                                <label>
-                                    <input type="radio" value="medium" formControlName="size">
-                                    <span>medium</span>
-                                </label>
-                                <label>
-                                    <input type="radio" value="large" formControlName="size">
-                                    <span>large</span>
-                                </label>
+                                <lebel for="size">Pick the Pizza size of your choice</lebel>
+                                <select id="pizza-size">
+                                    <option value="small">small</option>
+                                    <option value="medium">medium</option>
+                                    <option value="large">large</option>
+                                    
+                            </select>
                             </div>
                             <div class="form-group">
                                 <lebel for="crust">Choose the kind of Pizza you want</lebel>
-                                <select>
-                                        <option value="Thin crust">Thin crust</option>
-                                        <option value="Flatbread crust">Flatbread crust</option>
-                                        <option value="Thick crust">Thick crust</option>
-                                        <option value="Focaccia crust"> Focaccia</option>
+                                <select id="pizza-crust">
+                                        <option value="Thin ">Thin crust</option>
+                                        <option value="Flatbread ">Flatbread crust</option>
+                                        <option value="Thick ">Thick crust</option>
+                                        <option value="Focaccia "> Focaccia</option>
                                 </select>
                             </div>
                             <div class="form-group">
                                     <lebel for="toppings">Choose the prefered Pizza toppings</lebel>
-                                    <select>
+                                    <select id="pizza-topping">
                                             <option value="Mushrooms">Mushrooms</option>
                                             <option value="Onions">Onions</option>
                                             <option value="Sausage">Sausage</option>
@@ -105,21 +98,21 @@
                             </div>
                             <div class="form-group">
                                     <lebel for="crust">Do you want your pizza to be delivered?</lebel>
-                                    <select>
+                                    <select id="pizza-deliver">
                                             <option value="Yes">Yes</option>
                                             <option value="No">No</option>
                                            
                                     </select>
                                 </div>
                             <div class="form-group">
-                                <button type="submit" class="btn">Submit</button>
-                                <button type="submit" class="btn">next order</button>
+                                <button type="submit" class="btn-btn-primary" id="subm">Order now</button>
+                                <button type="submit" class="btn-btn-primary" id="submt">next order</button>
                             </div>
                         </form>
                     
 
                 </div>
-                <div class="col-md-2">
+                <div class="col-md-4">
 
                 </div>
             </div>
@@ -133,13 +126,7 @@
             </div> 
             
          </div>
-           
-            
-
-
-        
-
-        <script src="js/jquery-3.4.1.js"></script>
-        <script src="js/scripts.js"></script>
+         <script src="js/jquery-3.4.1.js"></script>
+         <script src="js/scripts.js"></script>
     </body>
 </html>
