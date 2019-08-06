@@ -51,8 +51,6 @@
     font-size: 20px;
     padding-left:50px; 
 }
-
-
 .backg #or a{
     color: #CA6C08;
     font-family:Chivo;
@@ -63,9 +61,7 @@
     margin-left: 50px;
     padding-right: 30px;
     padding-left:50px;
-    /* padding-bottom: 50px; */
-
-}
+    }
 #about{
     font-family: Chevo;
     font-size: 30PX;
@@ -86,8 +82,7 @@
     width:500px;
     height: 300px;
     border-radius:50%;
-    
-}
+    }
 #men{
     text-align: center;
     font-family: Chevo;
@@ -129,9 +124,7 @@
     margin-left: 280px;
     padding-right: 200px;
     padding-left:200px; 
-  
-
-}
+  }
 .ord a:hover{
     background-color:black;
     color:whitesmoke;   
@@ -141,17 +134,13 @@
     font-size: 20px;
     border-bottom: solid grey;
     padding-top: 50px;
-
 }
 .section-header{
     text-align: center;
     padding: 50px;
 }
 .shop-item-title{
-    
-    
     padding:30px;
-
 }
 .content-section{
     margin:20px;
@@ -166,13 +155,12 @@
     margin-left: 30px;
     height:300px; 
     padding-top:50px;
-    padding-left: 100px;
+    padding-left: 50px;
 }
 .summary p{
     margin-left: 30px;
     text-align: center;
-  
-}
+  }
 #contact{
     text-align: center;
 }
