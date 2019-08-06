@@ -1,8 +1,8 @@
 # my-fourth-project
+<<<<<<< HEAD
 
 ## Project Description
-
-<!-- This is Delani studio website! it includes aboutus parts talking about who we are,our different project portfolio,and contact us part. -->
+this app will be used to order pizza online,and give the summary of the whole price details
 
 ### AUthor's information
 
@@ -51,3 +51,4 @@ contact me on:
 
 Copyright (c) 2019
 
+=====
